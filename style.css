@@ -3,13 +3,12 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
 
 body {
     width: 100%;
-    min-height: 100vh;
     background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
@@ -17,12 +16,14 @@ body {
     justify-content: center;
 }
 
-.instagram-page {
+.bg {
     display: flex;
     align-items: center;
-    justify-content: start;
-    width: 45%;
-    height: 85vh;
+    justify-content: center;
+    margin: 110px auto 0;
+    max-width: 790px;
+    max-height: 700px;
+    width: 100%;
 }
 
 .phone {
@@ -30,6 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
+    flex-direction: column;
 }
 
 .login {
@@ -38,7 +40,7 @@ body {
     justify-content: center; /* vertical */
     flex-direction: column;
     width: 50%;
-    min-height: 34rem;
+    min-height: 331px;
 }
 
 .group {
@@ -47,17 +49,17 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    min-width: 348px;
-    min-height: 331px;
+    width: 100%;
     border-radius:1px;
-    margin:0 0 10px;
     padding:10px 0;
     border:1px solid #dbdbdb;
+    width: 331px;
+    height: 348px;
 }
 
 .instagram-logo {
     height: 4rem;
-    margin-top: 36px;
+    margin-top: 30px;
 }
 
 .profile-photo {
@@ -66,6 +68,7 @@ body {
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
+    margin-top: px;
 }
 
 .profile-photo img {
@@ -110,13 +113,7 @@ body {
 /* media queries */
 
 
-@media (max-width: 1024px) {
-    .instagram-page {
-        width: 90%;
-    }
-}
-
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     body {
         background-color: #ffffff;
     }
